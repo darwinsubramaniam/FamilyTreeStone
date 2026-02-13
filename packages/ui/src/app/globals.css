@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --polkadot-pink: #E6007A;
+  --polkadot-purple: #552BBF;
+  --polkadot-cyan: #00B2FF;
+  --polkadot-green: #56F39A;
+  --polkadot-lime: #D3FF33;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-pink-500: var(--polkadot-pink);
+  --color-purple-600: var(--polkadot-purple);
+  --color-cyan-500: var(--polkadot-cyan);
+  --color-green-400: var(--polkadot-green);
+  --color-lime-400: var(--polkadot-lime);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Smooth scrolling for tree visualization */
+.tree-container {
+  cursor: grab;
+}
+.tree-container:active {
+  cursor: grabbing;
+}
