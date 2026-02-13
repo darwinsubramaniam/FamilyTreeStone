@@ -1,0 +1,23 @@
+{
+  "name": "@family-tree/contracts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile && node scripts/sync-abi.js",
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "deploy:testnet": "hardhat ignition deploy ignition/modules/FamilyTree.ts --network polkadotHubTestNet",
+    "sync-abi": "node scripts/sync-abi.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@openzeppelin/contracts": "^5.2.0",
+    "@types/node": "^22.0.0",
+    "hardhat": "^2.22.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  }
+}

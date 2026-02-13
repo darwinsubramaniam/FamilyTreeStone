@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.polkadot.com)",
+      "WebSearch",
+      "WebFetch(domain:hardhat.org)",
+      "WebFetch(domain:reactflow.dev)"
+    ]
+  }
+}

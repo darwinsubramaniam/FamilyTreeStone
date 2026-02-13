@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "compile": "npm run compile -w @family-tree/contracts",
+    "test": "npm run test -w @family-tree/contracts",
+    "dev": "npm run dev -w @family-tree/ui",
+    "build": "npm run compile -w @family-tree/contracts && npm run build -w @family-tree/ui",
+    "sync-abi": "npm run sync-abi -w @family-tree/contracts"
+  }
+}

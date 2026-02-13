@@ -1,0 +1,13 @@
+node_modules/
+dist/
+cache/
+artifacts/
+typechain-types/
+coverage/
+coverage.json
+.env
+.env.local
+*.log
+ignition/deployments/
+.next/
+packages/ui/src/generated/
