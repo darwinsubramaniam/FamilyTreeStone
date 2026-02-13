@@ -8,6 +8,8 @@ coverage.json
 .env
 .env.local
 *.log
+*.tsbuildinfo
 ignition/deployments/
 .next/
 packages/ui/src/generated/
+packages/ui/tsconfig.tsbuildinfo
